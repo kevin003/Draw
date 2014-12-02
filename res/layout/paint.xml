@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFFF"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textShow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="画笔展示"/>
+    
+    <com.kevin.draw.view.DrawLine 
+        android:id="@+id/lineShow"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#fff8efe0"
+        android:orientation="vertical"/>
+
+    <View 
+        android:layout_width="fill_parent"  
+    	android:layout_height="2dp" />
+    
+    <LinearLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+        	android:id="@+id/textPenWidth"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+        	android:text="画笔宽度:1"/>
+    	<SeekBar
+        	android:id="@+id/seekbarPenWidth"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:max="30"
+        	android:progress="1"/>
+    </LinearLayout>
+	
+    <View 
+        android:layout_width="fill_parent"  
+    	android:layout_height="2dp" />
+    
+    <RelativeLayout 
+    	android:id="@+id/lineColor"
+       	android:layout_width="fill_parent"
+       	android:layout_height="55dp">
+        <TextView
+            android:id="@+id/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           	android:layout_centerInParent="true"
+            android:text="颜色:"/>
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>    
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="fill_parent"  
+    	android:layout_height="2dp" />
+    
+    <Spinner
+        android:id="@+id/spinnerPaint"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp" />
+</LinearLayout>

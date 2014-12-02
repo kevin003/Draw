@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/top" >
+    
+    <ImageView
+        android:id="@+id/backout"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/backout" />
+    
+    <ImageView
+        android:id="@+id/reform"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/backout"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/reform" />
+    
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/reform"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/save" />
+  
+    <ImageView
+        android:id="@+id/shared"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/save"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/shared" />
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/clear" />
+    
+    </RelativeLayout>
+
+</LinearLayout>
